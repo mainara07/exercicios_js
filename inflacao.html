@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+   
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var tomate1 = 3.30;
+    var tomate2 = 4.70;
+    var cenoura1 = 3.99;
+    var cenoura2 = 4.14;
+    var arroz1 = 2.99;
+    var arroz2 = 3.25;
+
+    function calculaInflaProduto(produto1, produto2) {
+        var media = tomate2 - tomate1;
+        mostra("A inflação do tomate foi " + media);
+
+        var media2 = cenoura2 - cenoura1;
+        mostra("A inflação do cenoura foi " + media2);
+
+        var media3 = arroz2 - arroz1;
+        mostra("A inflação do arroz foi " + media3);
+
+    }
+    calculaInflaProduto (4.70-3.30)
+    calculaInflaProduto (4.14-3.99)
+    calculaInflaProduto (3.25-2.99)
+
+
+
+
+</script>
