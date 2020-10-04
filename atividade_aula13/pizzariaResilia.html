@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<head>
+    <h1> Começaremos a fazer pizzas! </h1>
+</head>
+<script>
+
+var valorPizza = 35;
+var valorProducao = 10;
+var nomePizza = "calabresa";
+
+function calculaImposto (valorPizza, valorImposto){
+    document.write ((valorPizza*valorImposto) / 100 )
+
+}
+
+function calculaLucro (valorPizza, valorProducao){
+    document.write (valorPizza - valorProducao)
+}
+
+document.write ("Para a pizza " + nomePizza + " o lucro líquido é de: R$")
+calculaLucro (35,10)
+
+document.write ("<br>O imposto é de: R$")
+calculaImposto (35,8.9)
+
+</script>
