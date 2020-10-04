@@ -24,12 +24,22 @@
 
     function mostrarEscolha (item) {
         var nome= prompt ("Qual seu nome?")
-        var itemEscolhido = prompt (nome + ", escolha sua bebida:" + " 1. Refri 2. suco 3. água")
-        mostra ("<br>" + nome + ", sua bebida escolhida foi: " + itemEscolhido)
+        var itemEscolhido = prompt (nome + ", escolha sua bebida: \n 1.Refri \n 2. Suco \n 3. Água")
+        
+    if (itemEscolhido ==1 || itemEscolhido == "refri") {
+         return mostra ("<br>" + nome + ", sua bebida escolhida foi: refri")
+    } else if (itemEscolhido ==2 || itemEscolhido == "suco") {
+       return  mostra ("<br>" + nome + ", sua bebida escolhida foi: suco")
+    } else if (itemEscolhido ==3 || itemEscolhido == "agua"){
+        return  mostra ("<br>" + nome + ", sua bebida escolhida foi: água")
+    } else {
+        return mostra ("<br>" + nome + " , não temos esta bebida em nosso cardápio")
     }
+
+    }
+
     mostrarEscolha()
     
-
-    </script>
+</script>
 </body>
 </html>

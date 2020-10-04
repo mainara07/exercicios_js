@@ -5,23 +5,35 @@
 </head>
 <script>
 
-var valorPizza = 35;
+/*var valorPizza = 35;
 var valorProducao = 10;
-var nomePizza = "calabresa";
+var nomePizza = "calabresa";*/
 
-function calculaImposto (valorPizza, valorImposto){
-    document.write ((valorPizza*valorImposto) / 100 )
+function calculaImposto (valorPizza){
+    var y = (8,9 * valorPizza)/100
+   return y
+}
+
+function calculaLucro (valorPizza, valorProducao, imposto){
+    var lucro = (valorPizza - valorProducao- imposto)
+    return lucro
+}
+
+
+function calculadora (valorProducao, valorPizza, nomePizza){
+    var x= calculaImposto(valorPizza)
+    var w= calculaLucro (valorPizza, valorProducao,x)
+    document.write ("Para a pizza " + nomePizza + " o lucro líquido é de: R$" +  w + " o imposto é de:R$ " + x)
 
 }
 
-function calculaLucro (valorPizza, valorProducao){
-    document.write (valorPizza - valorProducao)
-}
+calculadora(10,35, "calabresa" )
 
-document.write ("Para a pizza " + nomePizza + " o lucro líquido é de: R$")
-calculaLucro (35,10)
+
+
+/*calculaLucro (35,10)
 
 document.write ("<br>O imposto é de: R$")
-calculaImposto (35,8.9)
+ var imposto = calculaImposto (35)*/
 
 </script>
