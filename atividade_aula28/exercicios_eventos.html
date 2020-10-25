@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS EM JS </title>
+</head>
+<body>
+
+    
+    <script>
+        var titulo = document.createElement('h1') //apenas cria o elemento 
+        titulo.textContent = "Salve"
+        document.body.appendChild(titulo); //insere um elemento dentro do elemento
+
+       
+      
+        titulo.onmouseup =  function () {
+                titulo.innerHTML = "!SALVE!"
+        }
+        titulo.onmouseover =  function () {
+                titulo.innerHTML = "(Salve)"
+        }
+        titulo.onmouseout =  function () {
+                titulo.innerHTML = "Salve"
+        }
+        
+
+          
+       
+
+
+    </script>
+
+</body>
+</html>
